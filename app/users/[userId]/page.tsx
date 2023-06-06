@@ -45,7 +45,6 @@ export default async function UserPage( {params: {userId}}: Params ) {
     <Suspense fallback={<h2>Loading...</h2>}>
 
   {/* a componeont to get the userPosts Data as a seperate component as a promise */}
-      {/* @ts-expect-error Server Component */}
       <UserPosts promise={userPostsData} />
 
     </Suspense>
